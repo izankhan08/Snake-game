@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assets/snakegame512.jpg" type="image/x-icon">
+    <title>Snake Game</title>
+</head>
+
+<body>
+    <div class="Score">Score: <span id="ScoreValue"></span></div>
+    <div class="HighScore">High Score: <span id="HighScoreValue"></span></div>
+    <div id="board"></div>
+
+    <div class="keyboard-buttons"> Use &nbsp;
+        <div id="uppc" class="keyboard-button hover up ">&uarr;</div>&nbsp;
+        <div id="downpc" class="keyboard-button hover down">&darr;</div>&nbsp;
+        <div id="leftpc" class="keyboard-button hover left">&larr;</div>&nbsp;
+        <div id="rightpc" class="keyboard-button hover right">&rarr;</div>&nbsp; keys to move
+    </div>
+
+    <div class="keyboard-buttons-on-mobile">
+        <div id="left" class="keyboard-buttonmob hover left">&larr;</div>
+        <div id="up" class="keyboard-buttonmob hover up">&uarr;</div>
+        <div id="right" class="keyboard-buttonmob hover right">&rarr;</div>
+        <div id="down" class="keyboard-buttonmob hover down">&darr;</div>
+    </div>
+
+    <div id="volume" class="volume">
+        <img id="volumeon" src="assets/volumeon.svg">
+        <img id="volumeoff" src="assets/vloumeoff.svg">
+    </div>
+
+</body>
+
+<script src="js/script.js"></script>
+
+</html>

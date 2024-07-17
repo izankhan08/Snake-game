@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(17, 17, 17, 1) 0%, rgba(1, 27, 0, 1) 50%, rgba(17, 17, 17, 1) 100%);
+    overflow: hidden;
+    height: 100vh;
+}
+
+#board {
+    width: 80vmin;
+    height: 80vmin;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+    box-shadow: rgba(252, 29, 59, 0.5) 0px 0px 20px 8px;
+    border-radius: 5px;
+}
+
+.snakehead {
+    background: linear-gradient(rgb(21, 91, 21), rgb(0, 255, 34));
+    background-color: rgb(89, 255, 0);
+    transform: scale(1.05);
+    border-radius: 30%;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.snakebody {
+    background-color: rgb(13, 255, 0);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    box-shadow: inset rgb(20, 93, 28) 0px 0px 10px 4px;
+}
+
+.food {
+    background: linear-gradient(red, rgb(255, 86, 86));
+    border-radius: 30%;
+}
+
+.Score {
+    position: absolute;
+    color: aliceblue;
+    left: 10px;
+    top: 10px;
+    border: 1px solid white;
+    padding-inline: 10px;
+    padding-block: 5px;
+    width: auto;
+    border-radius: 5px;
+}
+
+.HighScore {
+    position: absolute;
+    color: aliceblue;
+    right: 10px;
+    top: 10px;
+    border: 1px solid white;
+    /* box-shadow: rgba(252, 29, 59, 0.5) 0px 0px 8px 1px; */
+    padding-inline: 10px;
+    padding-block: 5px;
+    width: auto;
+    border-radius: 5px;
+}
+
+#ScoreValue {
+    color: aliceblue;
+    width: auto;
+}
+
+#HighScoreValue {
+    color: aliceblue;
+    width: auto;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+
+.keyboard-buttons {
+    bottom: 10px;
+    position: absolute;
+    display: flex;
+    color: white;
+    font-size: 24px;
+    align-items: center;
+}
+
+.keyboard-button {
+    text-align: center;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    box-shadow: rgba(252, 29, 59, 0.5) 0px 0px 8px 1px;
+    font-size: 20px;
+}
+
+.hover:hover {
+    background-color: rgba(0, 0, 0, 0.463);
+    cursor: pointer;
+}
+
+.hover:active {
+    background-color: rgba(0, 0, 0, 0.463);
+    cursor: pointer;
+    transform: translateY(2px);
+}
+
+.up {
+    border-radius: 50% 50% 0 0;
+}
+
+.down {
+    border-radius: 0 0 50% 50%;
+}
+
+.left {
+    border-radius: 50% 0 0 50%;
+}
+
+.right {
+    border-radius: 0 50% 50% 0;
+}
+
+
+.keyboard-buttons-on-mobile {
+    bottom: 110px;
+    position: absolute;
+    display: flex;
+    color: white;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.keyboard-buttonmob {
+    text-align: center;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+    box-shadow: rgba(252, 29, 59, 0.5) 0px 0px 10px 3px;
+}
+
+#up {
+    position: absolute;
+    bottom: 40px;
+}
+
+#down {
+    position: absolute;
+    top: 40px;
+}
+
+#left {
+    position: absolute;
+    right: 40px;
+}
+
+#right {
+    position: absolute;
+    left: 40px;
+}
+
+#volume {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    filter: invert();
+    cursor: pointer;
+}
+
+#volumeoff {
+    display: none;
+}
